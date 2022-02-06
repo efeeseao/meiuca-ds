@@ -3,11 +3,11 @@ import React from 'react'
 import * as S from './styles'
 
 export type ParagraphProps = {
-  content: string
+  children: React.ReactNode
 }
 
-const Paragraph = ({ content }: ParagraphProps) => (
-  <S.Description data-cy="content">{content}</S.Description>
+const Paragraph = ({ children }: ParagraphProps) => (
+  <S.Description>{children}</S.Description>
 )
 
 export default Paragraph
