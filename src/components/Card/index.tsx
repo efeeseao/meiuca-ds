@@ -19,7 +19,7 @@ export const Card = ({ description, label, subtitle, title }: CardProps) => (
     </S.CardHeader>
     <S.CardBody>
       <Paragraph>{description}</Paragraph>
-      <Button>{label}</Button>
+      <Button role="button">{label}</Button>
     </S.CardBody>
   </S.Card>
 )

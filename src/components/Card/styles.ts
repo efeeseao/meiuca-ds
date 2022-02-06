@@ -10,10 +10,10 @@ export const Card = styled.article`
     padding: ${spacing.size.xxs};
   `}
 `
-export const CardHeader = styled.header`
+export const CardHeader = styled.div`
   ${() => css``}
 `
-export const CardBody = styled.body`
+export const CardBody = styled.div`
   ${() => css`
     p {
       width: 100%;
