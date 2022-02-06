@@ -21,5 +21,5 @@ export const Default: Story<HeadingsProps> = (args) => (
 )
 
 Default.args = {
-  children: 'Heading'
+  children: 'Heading SM'
 }

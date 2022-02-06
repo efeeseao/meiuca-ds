@@ -17,7 +17,7 @@ export const wrapperModifiers = {
 
 export const Heading = styled.h1<HeadingsProps>`
   ${({ size }) => css`
-    color: ${palette.color.neutral[4]};
+    color: ${palette.color.neutral[5]};
     font-family: ${font.family.highlight};
     font-weight: ${font.weight.bold};
     line-height: ${line.height.distant};
