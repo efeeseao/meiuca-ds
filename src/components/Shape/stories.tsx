@@ -19,7 +19,3 @@ export const Default: Story<ShapeProps> = (args) => (
     <Shape {...args} />
   </Wrapper>
 )
-
-Default.args = {
-  children: ''
-}
