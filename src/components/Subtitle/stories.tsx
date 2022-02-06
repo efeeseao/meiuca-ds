@@ -21,5 +21,5 @@ export const Default: Story<SubtitleProps> = (args) => (
 )
 
 Default.args = {
-  children: 'Subtile'
+  children: 'Subtile SM'
 }
