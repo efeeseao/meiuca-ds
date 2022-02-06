@@ -16,12 +16,12 @@ export type ButtonStyledProps = {
 } & Pick<ButtonProps, 'size' | 'fullWidth' | 'minimal'>
 
 const wrapperModifiers = {
-  small: () => css`
+  sm: () => css`
     font-size: ${font.size.xs};
     padding: ${spacingSquish.size.nano.stack};
   `,
 
-  medium: () => css`
+  md: () => css`
     font-size: ${font.size.sm};
     padding: ${spacingSquish.size.xs.stack};
   `,
@@ -42,7 +42,7 @@ const wrapperModifiers = {
     }
   `,
 
-  large: () => css`
+  lg: () => css`
     font-size: ${font.size.lg};
     padding: ${spacingSquish.size.sm.stack};
   `,

@@ -48,5 +48,5 @@ export const withIcon: Story<ButtonProps> = (args) => (
 withIcon.args = {
   children: 'Button label',
   icon: <AddShoppingCart />,
-  size: 'small'
+  size: 'sm'
 }
