@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 
-import { HeadingsProps } from '.'
+import { SubtitleProps } from '.'
+
 import { font, line, palette } from 'styles/theme'
 
 export const wrapperModifiers = {
@@ -15,12 +16,12 @@ export const wrapperModifiers = {
   `
 }
 
-export const Heading = styled.h1<HeadingsProps>`
+export const Subtitle = styled.h2<SubtitleProps>`
   ${({ size }) => css`
-    color: ${palette.color.neutral[5]};
+    color: ${palette.color.neutral[4]};
     font-family: ${font.family.highlight};
-    font-weight: ${font.weight.bold};
-    line-height: ${line.height.distant};
+    font-weight: ${font.weight.medium};
+    line-height: ${line.height.medium};
 
     ${!!size && wrapperModifiers[size]()}
   `}
