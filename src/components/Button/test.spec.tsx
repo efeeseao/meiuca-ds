@@ -10,23 +10,23 @@ describe('<Button />', () => {
 
     expect(screen.getByRole('button', { name: /Button label/i })).toHaveStyle({
       padding: '16px 24px',
-      'font-size': '24px'
+      'font-size': '20px'
     })
 
     expect(container.firstChild).toMatchSnapshot()
   })
 
   it('should render the small size', () => {
-    render(<Button size="small">Button label</Button>)
+    render(<Button size="sm">Button label</Button>)
 
     expect(screen.getByRole('button', { name: /Button label/i })).toHaveStyle({
       padding: '8px 16px',
-      'font-size': '20px'
+      'font-size': '16px'
     })
   })
 
   it('should render the large size', () => {
-    render(<Button size="large">Button label</Button>)
+    render(<Button size="lg">Button label</Button>)
 
     expect(screen.getByRole('button', { name: /Button label/i })).toHaveStyle({
       'font-size': '32px',
