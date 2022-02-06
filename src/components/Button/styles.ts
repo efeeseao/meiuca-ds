@@ -17,12 +17,12 @@ export type ButtonStyledProps = {
 
 const wrapperModifiers = {
   small: () => css`
-    font-size: ${font.size.sm};
+    font-size: ${font.size.xs};
     padding: ${spacingSquish.size.nano.stack};
   `,
 
   medium: () => css`
-    font-size: ${font.size.md};
+    font-size: ${font.size.sm};
     padding: ${spacingSquish.size.xs.stack};
   `,
 
@@ -68,7 +68,7 @@ export const Wrapper = styled.button<ButtonStyledProps>`
     align-items: center;
     justify-content: center;
     background: ${palette.color.primary[3]};
-    color: ${palette.color.neutral[5]};
+    color: ${palette.color.neutral[1]};
     font-family: ${font.family.highlight};
     border: ${radius.size.none};
     cursor: pointer;
@@ -78,7 +78,7 @@ export const Wrapper = styled.button<ButtonStyledProps>`
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      background: ${minimal ? 'none' : `${palette.color.primary[2]}`};
+      background: ${minimal ? 'none' : `${palette.color.primary[4]}`};
     }
 
     ${!!size && wrapperModifiers[size]()};
