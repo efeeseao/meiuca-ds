@@ -58,6 +58,7 @@
     "webpack": "5.68.0"
   },
   "dependencies": {
+    "@styled-icons/material-outlined": "^10.34.0",
     "styled-components": "^5.3.3"
   }
 }

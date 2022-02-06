@@ -3,9 +3,12 @@ import React from 'react'
 import * as S from './styles'
 
 export type HeadingsProps = {
-  title: string
+  children: React.ReactNode
+  size?: 'sm' | 'md' | 'lg'
 }
 
-export const Heading = ({ title }: HeadingsProps) => (
-  <S.Heading>{title}</S.Heading>
+const Heading = ({ children, size = 'lg' }: HeadingsProps) => (
+  <S.Heading size={size}>{children}</S.Heading>
 )
+
+export default Heading

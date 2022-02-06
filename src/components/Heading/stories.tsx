@@ -1,18 +1,25 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import { Heading } from '.'
+
+import Heading, { HeadingsProps } from '.'
+import { Wrapper } from 'components/Wrapper'
 
 export default {
   title: 'Heading',
   component: Heading,
-  args: {
-    title: 'Hello Heading'
+  argsTypes: {
+    children: {
+      type: 'string'
+    }
   }
-} as Meta
+} as Meta<HeadingsProps>
 
-export const Basic: Story = (args) => <Heading title={''} {...args} />
-Basic.args = {
-  title: 'Hello Heading'
+export const Default: Story<HeadingsProps> = (args) => (
+  <Wrapper>
+    <Heading {...args} />
+  </Wrapper>
+)
+
+Default.args = {
+  children: 'Heading SM'
 }
-
-export const Default: Story = (args) => <Heading title={''} {...args} />
